@@ -38,18 +38,19 @@ export default function Hero() {
         >
           <source src="/layout.mp4" />
         </video>
-        <div className="container flex flex-col items-start justify-center tracking-wide text-white dark:text-white">
+        <div className="container flex flex-col items-start justify-center tracking-wide text-white dark:text-black">
           <div className="container relative flex h-full w-full flex-col items-center">
             <div className="h-72 w-[280px] text-center text-[2rem] font-extrabold sm:w-[520px] md:w-[700px] lg:mb-5 lg:w-[920px] lg:text-[3rem]">
               <motion.span
                 initial={{ y: -100, x: "-50%", opacity: 0 }}
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
                 className="mb-10 text-start font-extrabold"
-              >
-                Сайн байна уу!
-              </motion.span>
+              >Сайн байна уу!
               <br />
-              <TextAnimation delay={1} baseText={`Ж. Амгаланбаяр байна.`} />
+              Ж. Амгаланбаяр байна.
+              </motion.span>
+              <TextAnimation className=" text-black dark:text-black" delay={1} baseText={``} />
+         
             </div>
             <motion.div
               className="w-92 flex flex-col items-center justify-center gap-3 px-4 text-sm font-medium md:mt-12 md:flex-row lg:text-lg"

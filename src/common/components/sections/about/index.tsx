@@ -40,9 +40,9 @@ export default function About() {
             opacity: opacityProgess,
           }}
         >
-          <div className="relative group w-full ">
-            <div className="flex flex-col gap-3 relative lg:text-start lg:block lg:absolute lg:right-0 lg:top-[27%] xl:top-1/3 lg:max-w-[580px] xl:max-w-[650px] text-md lg:text-lg z-40 font-semibold tracking-wide text-primary xl:h-[442px]">
-              <div className="flex flex-col gap-6 justify-center h-full">
+          <div className="group relative w-full">
+            <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
+              <div className="flex h-full flex-col justify-center gap-6">
                 <span>
 
                   Програм хангамж хөгжүүлэлтийн чиглэлээр суралцан төгссөн. "Back-End" талын даалгавар ажилуудыг гүйцэтгэж Java, Spring-boot, Vaadin дээр ажиллаж, 
@@ -68,9 +68,8 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="lg:left-0 lg:top-1/4 z-30">
-              <div className="relative w-72 h-72 lg:w-[380px] lg:h-[380px] xl:w-[470px] xl:h-[470px]">
-                <div className="group-hover:opacity-60 transition-opacity absolute inset-0 bg-gradient-to-b from-[#89e7f8] via-[#e0afa0] to-[#e29578] rounded-full z-20"></div>
+            <div className="absolute z-30 hidden lg:left-0 lg:top-1/4 lg:block">
+              <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]">
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}

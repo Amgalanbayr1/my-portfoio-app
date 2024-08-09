@@ -42,7 +42,6 @@ const TextAnimation = ({
       animate={{ y: 0, x: '-50%', opacity: 1 }}
       className={`text-[2rem] lg:text-[3rem] h-64 max-w-96 font-extrabold mb-10 text-start ${className}`} // Using className prop
     >
-      <motion.span>{displayText}</motion.span>
       {done && (
         <>
           <br />
