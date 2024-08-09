@@ -45,17 +45,15 @@ export default function About() {
               <div className="flex flex-col gap-6 justify-center h-full">
                 <span>
 
-                  Програм хангамж хөгжүүлэлтийн чиглэлээр суралцан төгссөн. "Back-End" талын ажилуудыг гүйцэтгэхэд Java, Spring-boot, Vaadin дээр ажиллаж, 
-                  MySQL, PostgreSQL, MongoDB зэрэг өгөгдлийн сангуудтай ажиллах туршлага хуримтлуулсан. Мөн GIT, GitLab-CICD, Docker, Ubuntu OS зэрэг 
-                  технологиудыг ашиглаж байсан. Түүнчлэн Flutter, Next-Js зэрэг Front-End хөгжүүлэлтийн үндсэн ойлголтуудыг эзэмшсэн.
+                  Програм хангамж хөгжүүлэлтийн чиглэлээр суралцан төгссөн. "Back-End" талын даалгавар ажилуудыг гүйцэтгэж Java, Spring-boot, Vaadin дээр ажиллаж, 
+                  MySQL, PostgreSQL, MongoDB зэрэг өгөгдлийн сангуудтай ажиллах туршлага хуримтлуулсан. Мөн GIT, GitLab-CICD, Docker,Nginx, Ubuntu OS зэрэг 
+                  технологиудыг ашиглаж байсан. Түүнчлэн Flutter, Next-Js зэрэг Front-End хөгжүүлэлтийн үндсэн суурь мэдлэгтэй.
                 </span>
                 <span>
-                  Seeking for Web Development opportunities where I can leverage
-                  my skills to create meaningful connections between products
-                  and users.
+                  Одоогоор мэдээллийн технологийн систэм хөгжүүлэлтийн ажил хайж байна. 
                 </span>
                 <p className="flex flex-col items-start sm:items-center lg:items-start">
-                  <span>So if you are interested,</span>
+                  <span>Хэрэв холбоо барихыг хүсвэл,</span>
                   <Link
                     href={'contact'}
                     onClick={(e) => {
@@ -63,16 +61,16 @@ export default function About() {
                     }}
                     className="w-52 lg:w-40"
                   >
-                    <span className="text-2xl font-bold dark:bg-[#ddbea9] uppercase lg:normal-case bg-[#ffcbb4]">
-                      Contact me!
+                    <span className="text-2xl font-bold dark:bg-[#ddbea9] uppercase lg:normal-case bg-[#e4f318]">
+                      Холбогдох!
                     </span>
                   </Link>
                 </p>
               </div>
             </div>
-            <div className="absolute hidden lg:block lg:left-0 lg:top-1/4 z-30">
+            <div className="lg:left-0 lg:top-1/4 z-30">
               <div className="relative w-72 h-72 lg:w-[380px] lg:h-[380px] xl:w-[470px] xl:h-[470px]">
-                <div className="group-hover:opacity-60 transition-opacity absolute inset-0 bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] rounded-full z-20"></div>
+                <div className="group-hover:opacity-60 transition-opacity absolute inset-0 bg-gradient-to-b from-[#89e7f8] via-[#e0afa0] to-[#e29578] rounded-full z-20"></div>
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}

@@ -29,14 +29,14 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Hit me up!</SectionHeading>
+      <SectionHeading>Надтай холбоо барина уу!</SectionHeading>
       <div className="w-[min(100%,38rem)] px-4">
         <p className="text-gray-700 mt-6 mb-20 dark:text-white/80">
-          Please contact me directly at{' '}
-          <a className="underline" href="mailto:azimov.workspace@gmail.com">
-            azimov.workspace@gmail.com
+          Энд дарж шууд имэйл-ээр холбогдоно уу{' '}
+          <a className="underline" href="mailto:j.amgalanbayr1@gmail.com">
+          j.amgalanbayr1@gmail.com
           </a>{' '}
-          or through this form.
+          эсвэл доорх формоор бичнэ үү.
         </p>
 
         <form
@@ -49,7 +49,7 @@ export default function Contact() {
               return
             }
 
-            toast.success('Email sent successfully!')
+            toast.success('Амжилттай илгээгдлээ!')
           }}
         >
           <input
@@ -58,12 +58,12 @@ export default function Contact() {
             type="email"
             required
             maxLength={500}
-            placeholder="Your email"
+            placeholder="Таны цахим хаяг"
           />
           <textarea
             className="h-52 my-3 rounded-lg resize-none border p-4 bg-gray-50 dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:placeholder:text-darkBg"
             name="message"
-            placeholder="Your message 👋"
+            placeholder="Агуулга👋"
             required
             maxLength={5000}
           />
