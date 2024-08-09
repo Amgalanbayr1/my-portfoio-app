@@ -36,13 +36,13 @@ export default function Hero() {
         >
           <source src="/layout.mp4" />
         </video>
-        <div className="flex flex-col items-start justify-center container tracking-wide text-black dark:text-white">
-          <div className="relative w-full h-full container flex flex-col items-center">
-            <div className="lg:text-[2rem] text-[1rem] font-extrabold lg:mb-5 text-center h-60 w-[750px] sm:w-[620px] md:w-[900px] lg:w-[720px]">
+        <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
+          <div className="container relative flex h-full w-full flex-col items-center">
+            <div className="h-72 w-[280px] text-center text-[2rem] font-extrabold sm:w-[520px] md:w-[700px] lg:mb-5 lg:w-[920px] lg:text-[3rem]">
               <motion.span
                 initial={{ y: -100, x: '-50%', opacity: 0 }}
                 animate={{ y: 0, x: '-50%', opacity: 1 }}
-                className="font-extrabold mb-10 text-start text-white"
+                className="mb-10 text-start font-extrabold text-white"
               >
                 Сайн байна уу!
               </motion.span>
@@ -65,7 +65,7 @@ export default function Hero() {
               }}
             >
               <a
-                className="group w-64 sm:w-auto bg-darkBg text-white hover:dark:text-black px-7 py-3 cursor-pointer flex items-center gap-2 rounded-full outline-none hover:bg-lightBeige/50 hover:text-black transition justify-center"
+                className="group w-64 sm:w-auto bg-darkBg text-white hover:dark:text-black px-7 py-3 cursor-pointer flex items-center gap-2 rounded-full outline-none hover:bg-white hover:text-black transition justify-center"
                 onClick={(e) => {
                   smoothScrollTo({ e, id: 'contact' })
                   setActiveSection('contact')
