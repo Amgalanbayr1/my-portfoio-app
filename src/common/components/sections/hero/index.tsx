@@ -41,7 +41,7 @@ export default function Hero() {
         </video>
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
-            <div className="h-72 w-[280px] text-center text-[2rem] font-extrabold sm:w-[520px] md:w-[700px] lg:mb-5 lg:w-[920px] lg:text-[3rem]">
+            <div className="h-72 w-[280px] text-center text-[2rem] font-extrabold sm:w-[520px] md:w-[700px] lg:mb-5 lg:w-[920px] lg:text-[2.5rem]">
               <motion.span
                 initial={{ y: -100, x: "-50%", opacity: 0 }}
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
@@ -52,6 +52,7 @@ export default function Hero() {
               <br />
               <TextAnimation delay={1} baseText={`Ж.Амгаланбаяр байна.`} />
             </div>
+
             <motion.div
               className="w-92 flex flex-col items-center justify-center gap-3 px-4 text-sm font-medium md:mt-12 md:flex-row lg:text-lg"
               initial={{ opacity: 0, y: 100 }}
