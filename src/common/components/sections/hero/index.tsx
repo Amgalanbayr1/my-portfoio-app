@@ -1,3 +1,4 @@
+
 "use client";
 
 import "next-cloudinary/dist/cld-video-player.css";
@@ -38,19 +39,18 @@ export default function Hero() {
         >
           <source src="/layout.mp4" />
         </video>
-        <div className="container flex flex-col items-start justify-center tracking-wide text-white dark:text-black">
+        <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
             <div className="h-72 w-[280px] text-center text-[2rem] font-extrabold sm:w-[520px] md:w-[700px] lg:mb-5 lg:w-[920px] lg:text-[3rem]">
               <motion.span
                 initial={{ y: -100, x: "-50%", opacity: 0 }}
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
                 className="mb-10 text-start font-extrabold"
-              >Сайн байна уу!
-              <br />
-              Ж. Амгаланбаяр байна.
+              >
+                Сайн байна уу!
               </motion.span>
-              <TextAnimation className=" text-black dark:text-black" delay={1} baseText={``} />
-         
+              <br />
+              <TextAnimation delay={1} baseText={`Ж.Амгаланбаяр байна.`} />
             </div>
             <motion.div
               className="w-92 flex flex-col items-center justify-center gap-3 px-4 text-sm font-medium md:mt-12 md:flex-row lg:text-lg"
@@ -61,7 +61,7 @@ export default function Hero() {
               }}
             >
               <a
-                className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-darkBg px-7 py-3 text-white outline-none transition hover:bg-white hover:text-black hover:dark:text-black sm:w-auto"
+                className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-darkBg px-7 py-3 text-white outline-none transition hover:bg-lightBeige hover:text-black hover:dark:text-black sm:w-auto"
                 onClick={(e) => {
                   smoothScrollTo({ e, id: "contact" });
                   setActiveSection("contact");
