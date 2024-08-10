@@ -1,6 +1,5 @@
-
-"use client";
-
+import React, { Suspense } from 'react';
+import LoadingSpinner from "./_components/loadingSpinner";
 import "next-cloudinary/dist/cld-video-player.css";
 import SectionDivider from "@/common/components/shared/section-divider";
 import TextAnimation from "./_components/text-animation";
@@ -27,18 +26,22 @@ export default function Hero() {
             "absolute left-0 top-0 h-screen w-full dark:bg-[#0000007c]"
           }
         ></div>
-        <video
-          width="480"
-          height="720"
-          preload="none"
-          autoPlay
-          crossOrigin="anonymous"
-          muted
-          loop
-          className="absolute -z-10 h-screen w-screen object-cover"
-        >
-          <source src="/layout.mp4" />
-        </video>
+
+        <Suspense fallback={<LoadingSpinner />}>
+          <video
+            width="480"
+            height="720"
+            preload="none"
+            autoPlay
+            crossOrigin="anonymous"
+            muted
+            loop
+            className="absolute -z-10 h-screen w-screen object-cover"
+          >
+            <source src="/layout.mp4" />
+          </video>
+        </Suspense>
+
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
             <div className="h-72 w-[280px] text-center text-[1.5rem] font-extrabold sm:w-[520px] md:w-[700px] lg:mb-5 lg:w-[920px] lg:text-[2.5rem]">
