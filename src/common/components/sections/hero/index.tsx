@@ -36,9 +36,10 @@ export default function Hero() {
             crossOrigin="anonymous"
             muted
             loop
+            playsInline
             className="absolute -z-10 h-screen w-screen object-cover"
           >
-            <source src="/layout.mp4" />
+            <source src="/layout.mp4" type="video/mp4" />
           </video>
         </Suspense>
 
