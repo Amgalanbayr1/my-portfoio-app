@@ -40,24 +40,35 @@ export default function About() {
             opacity: opacityProgess,
           }}
         >
-          <div className="group relative w-full">
-            <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
+          <div className="group relative w-full flex flex-col items-center lg:flex-row lg:justify-center lg:items-center">
+            <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px] rounded-full overflow-hidden">
+              <div className="absolute inset-0">
+                <Image
+                  src={portfolioImg}
+                  alt="portfolio image"
+                  placeholder="blur"
+                  width={470}
+                  height={470}
+                  className="rounded-full z-10 lg:w-[380px] lg:h-[380px] xl:w-[470px] xl:h-[470px]"
+                />
+              </div>
+            </div>
+            <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary text-center lg:text-left lg:max-w-[580px] lg:text-lg xl:h-[442px] xl:max-w-[650px] lg:ml-10">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
-
-                  Програм хангамж хөгжүүлэлтийн чиглэлээр суралцан төгссөн. "Back-End" талын даалгавар ажилуудыг гүйцэтгэж Java, Spring-boot, Vaadin дээр ажиллаж, 
-                  MySQL, PostgreSQL, MongoDB зэрэг өгөгдлийн сангуудтай ажиллах туршлага хуримтлуулсан. Мөн GIT, GitLab-CICD, Docker,Nginx, Ubuntu OS зэрэг 
+                  Програм хангамж хөгжүүлэлтийн чиглэлээр суралцан төгссөн. "Back-End" талын даалгавар ажилуудыг гүйцэтгэж Java, Spring-boot, Vaadin дээр ажиллаж,
+                  MySQL, PostgreSQL, MongoDB зэрэг өгөгдлийн сангуудтай ажиллах туршлага хуримтлуулсан. Мөн GIT, GitLab-CICD, Docker, Nginx, Ubuntu OS зэрэг
                   технологиудыг ашиглаж байсан. Түүнчлэн Flutter, Next-Js зэрэг Front-End хөгжүүлэлтийн үндсэн суурь мэдлэгтэй.
                 </span>
                 <span>
-                  Одоогоор мэдээллийн технологийн систэм хөгжүүлэлтийн ажил хайж байна. 
+                  Одоогоор мэдээллийн технологийн систем хөгжүүлэлтийн ажил хайж байна.
                 </span>
-                <p className="flex flex-col items-start sm:items-center lg:items-start">
+                <p className="flex flex-col items-center lg:items-start">
                   <span>Хэрэв холбоо барихыг хүсвэл,</span>
                   <Link
                     href={'contact'}
                     onClick={(e) => {
-                      smoothScrollTo({ e, id: 'contact' })
+                      smoothScrollTo({ e, id: 'contact' });
                     }}
                     className="w-52 lg:w-40"
                   >
@@ -68,21 +79,8 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="absolute z-30 hidden lg:left-0 lg:top-1/4 lg:block">
-              <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]">
-                <div className="absolute inset-0">
-                  <Image
-                    src={portfolioImg}
-                    alt="portfolio image"
-                    placeholder="blur"
-                    width={470}
-                    height={470}
-                    className="rounded-full z-10 lg:w-[380px] lg:h-[380px] xl:w-[470px] xl:h-[470px]"
-                  />
-                </div>
-              </div>
-            </div>
           </div>
+
         </motion.div>
       </div>
       <SectionDivider />

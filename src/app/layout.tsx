@@ -43,9 +43,9 @@ export default function RootLayout({
               <Header />
               {children}
               <Footer />
-              {/* <div className="fixed top-1 left-1 sm:left-6 sm:bottom-6 sm:top-auto right-auto z-[99]">
+              <div className="fixed top-1 left-1 sm:left-6 sm:bottom-6 sm:top-auto right-auto z-[99]">
                 <ModeToggle />
-              </div> */}
+              </div>
               <Toaster position="top-right" />
             </ThemeProvider>
           </ActiveSectionContextProvider>
