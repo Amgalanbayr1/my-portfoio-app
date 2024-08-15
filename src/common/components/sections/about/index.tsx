@@ -22,7 +22,8 @@ export default function About() {
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1])
 
   return (
-    <motion.section
+ <div>
+     <motion.section
       className="flex flex-col md:scroll-mt-4 lg:scroll-mt-24 items-center justify-start leading-8 h-[1000px] lg:h-[1100px] z-50 w-full dark:bg-darkBg dark:text-white"
       ref={ref}
       initial={{ opacity: 0, y: 100 }}
@@ -33,7 +34,7 @@ export default function About() {
       <div className="flex flex-col items-center w-full pt-8">
         <SectionHeading>Миний тухай</SectionHeading>
         <motion.div
-          className="w-full sm:w-[60%] sm:text-center lg:w-[1040px] xl:w-[1180px] lg:h-[700px] overflow-hidden py-12 px-4"
+          className="w-full sm:w-[60%] sm:text-center lg:w-[1040px] xl:w-[1180px] lg:h-[700px]"
           ref={divRef}
           style={{
             scale: scaleProgess,
@@ -85,5 +86,6 @@ export default function About() {
       </div>
       <SectionDivider />
     </motion.section>
+ </div>
   )
 }
