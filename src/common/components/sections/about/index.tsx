@@ -22,7 +22,6 @@ export default function About() {
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1])
 
   return (
- <div>
      <motion.section
       className="flex flex-col md:scroll-mt-4 lg:scroll-mt-24 items-center justify-start leading-8 h-[1000px] lg:h-[1100px] z-50 w-full dark:bg-darkBg dark:text-white"
       ref={ref}
@@ -86,6 +85,5 @@ export default function About() {
       </div>
       <SectionDivider />
     </motion.section>
- </div>
   )
 }
