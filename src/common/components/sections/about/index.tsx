@@ -56,7 +56,7 @@ export default function About() {
             <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary text-center lg:text-left lg:max-w-[580px] lg:text-lg xl:h-[442px] xl:max-w-[650px] lg:ml-10">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
-                  Програм хангамж хөгжүүлэлтийн чиглэлээр суралцан төгссөн. "Back-End" талын даалгавар ажилуудыг гүйцэтгэж Java, Spring-boot, Vaadin дээр ажиллаж,
+                  Программ хангамж хөгжүүлэлтийн чиглэлээр суралцан төгссөн. "Back-End" талын даалгавар ажлуудыг гүйцэтгэж Java, Spring-boot, Vaadin дээр ажиллаж,
                   MySQL, PostgreSQL, MongoDB зэрэг өгөгдлийн сангуудтай ажиллах туршлага хуримтлуулсан. Мөн GIT, GitLab-CICD, Docker, Nginx, Ubuntu OS зэрэг
                   технологиудыг ашиглаж байсан. Түүнчлэн Flutter, Next-Js зэрэг Front-End хөгжүүлэлтийн үндсэн суурь мэдлэгтэй.
                 </span>
