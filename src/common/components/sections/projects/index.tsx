@@ -11,7 +11,8 @@ export default function Projects() {
   const { ref } = useSectionInView('projects', 0.25)
 
   return (
-    <section
+ <div>
+     <section
       className="flex flex-col justify-center items-center w-full min-h-screen scroll-mt-28 dark:bg-darkBg dark:text-white"
       id="projects"
       ref={ref}
@@ -26,5 +27,6 @@ export default function Projects() {
       </div>
       <SectionDivider />
     </section>
+ </div>
   )
 }

@@ -33,8 +33,8 @@ export default function Contact() {
       <div className="w-[min(100%,38rem)] px-4">
         <p className="text-gray-700 mt-6 mb-20 dark:text-white/80">
           Энд дарж шууд имэйл-ээр холбогдоно уу{' '}
-          <a className="underline" href="mailto:j.amgalanbayr1@gmail.com">
-          j.amgalanbayr1@gmail.com
+          <a className="underline" href="mailto:j.amgaa0206.mn@gmail.com">
+          j.amgaa0206.mn@gmail.com
           </a>{' '}
           эсвэл доорх формоор бичнэ үү.
         </p>
