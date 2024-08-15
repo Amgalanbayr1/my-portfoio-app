@@ -12,6 +12,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center w-full p-0">
       <Hero />
       <About />
+      <br />
       <Projects />
       <Experience />
       <Skills />
