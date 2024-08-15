@@ -81,7 +81,7 @@ export default function Hero() {
                 href="/CV_Amgalanbayar_Jargalsaikhan.pdf"
                 download
               >
-                <span>Download CV</span>
+                <span>CV татах</span>
               </a>
 
               <div className="flex gap-2">
