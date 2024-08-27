@@ -24,17 +24,17 @@ export default function ContactFormEmail({
   return (
     <Html>
       <Head />
-      <Preview>New message from your portfolio site</Preview>
+      <Preview>Таны ПОРТФОЛИО сайтаас ирсэн шинэ мессеж</Preview>
       <Tailwind>
         <Body className="bg-gray-100 text-black">
           <Container>
             <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
               <Heading className="leading-tight">
-                You received the following message from the contact form
+              Та холбоо барих маягтаас дараах мессежийг хүлээн авлаа
               </Heading>
               <Text>{message}</Text>
               <Hr />
-              <Text>The email of sender is: {senderEmail}</Text>
+              <Text>Илгээгчийн имэйл байна: {senderEmail}</Text>
             </Section>
           </Container>
         </Body>
